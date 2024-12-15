@@ -1,0 +1,444 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1360px)
+	/**/
+	.partners__list 
+		flex-wrap: wrap
+		justify-content: center
+	.partner__item
+		width: 33%
+		padding-top: 20px 
+		padding-bottom: 20px
+	.form-wrapper
+		padding: 100px 40px
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1260px)
+	/**/
+	.header li a
+		font-size: 16px
+	.menu .header-sticky-btn
+		font-size: 14px
+	.logo 
+		img 
+			width: 108px
+	.menu li
+		margin-left: 20px
+	.menu .header-sticky-btn
+		margin-left: 20px
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	//start header style
+	.menu 
+		display: none
+	.menu__btn
+		cursor: pointer
+		display: block
+		z-index: 999
+	.menu__row
+		width: 24px 
+		height: 2px
+		background: #fff
+		margin-bottom: 3px
+		transition: all .3s
+	.menu__row:last-child 
+		margin-bottom: 0
+	.menu__btn.active 
+		.menu__row 
+			margin-bottom: 2px
+		.menu__row:last-child 
+			display: none
+		.menu__row:first-child 
+			transform: rotate(45deg)
+			position: relative
+			top: 2px
+		.menu__row:nth-child(2) 
+			transform: rotate(-45deg)
+			position: relative
+			top: -2px
+	.header 
+		.container-fluid 
+			justify-content: flex-start
+	.logo
+		margin-left: 25px
+		z-index: 999
+		img 
+			width: 108px
+	.menu.active 
+		position: absolute 
+		top: 0 
+		left: 0
+		width: 100vw
+		height: 100vh 
+		background: $blue
+		display: block
+		z-index: 99
+		padding-top: 112px
+		overflow-y: auto
+		ul 
+			display: flex 
+			flex-direction: column
+			align-items: flex-start
+			padding-left: 0
+			width: 87.467vw
+			margin-left: auto 
+			margin-right: auto
+			li 
+				margin-left: 0
+				padding-top: 20px 
+				padding-bottom: 20px
+				border-bottom: 1px solid #B0A078
+				width: 100%
+				transition: all .3s
+				a 
+					font-size: 16px
+	.menu__mobile-btn
+		position: fixed 
+		bottom: 24px 
+		left: 50% 
+		transform: translateX(-50%)
+		background: $white
+		width: 87.467vw
+		text-align: center
+		text-transform: uppercase
+		font-family: $secondary-font
+		line-height: 125%
+		font-weight: 700
+		padding-top: 12px
+		padding-bottom: 12px
+		font-size: 14px
+		letter-spacing: 2.5px
+		z-index: 999
+	.menu li:after
+		display: none
+	.header.sticky .menu__row
+		background: $blue	
+	.header.sticky
+		.menu 
+			li 
+				a 
+					color: #fff
+	.header.sticky .menu .header-sticky-btn.button.button--blue
+		display: none	
+	.header.active 
+		position: fixed
+	.menu__mobile-btn
+		display: block	
+	.header 
+		padding-top: 19px 
+		padding-bottom: 19px
+	.header.sticky.active 
+		.logo-white 
+			display: block
+		.logo-blue 
+			display: none
+		.menu__row 
+			background: #fff
+	//end header style
+
+	//start statistic style 
+	.about__statistics
+		flex-wrap: wrap
+		.statistic__item
+			width: 50%
+	.statistic__item
+		justify-content: flex-start
+	.statistic__item:last-child
+		justify-content: flex-start
+	.statistic__item
+		border-right: none
+	.statistic__item
+		padding-top: 24px
+		padding-bottom: 24px
+		border-bottom: 1px solid #B0A078
+	.statistic__item-valume
+		font-size: 70px
+	.statistic__item-content
+		.sub-heading
+			font-size: 16px
+	.sub-heading
+		font-size: 16px
+		margin-bottom: 24px
+	.about__title
+		font-size: 24px
+	.section-header
+		padding-bottom: 32px
+	.about__content p
+		padding-top: 32px
+	body 
+		font-size: 18px
+	.about__content
+		padding-bottom: 0px
+	.banner .banner__img
+		height: 83.333vw
+	.statistic
+		padding-bottom: 0px
+	.statistic__item:last-child,
+	.statistic__item:nth-child(3)
+		border-bottom: none
+
+		
+	//end statistic style 
+	.main-screen
+		padding-top: 225px
+		padding-bottom: 105px
+		min-height: 100vh
+		position: relative
+		.button 
+			position: absolute 
+			bottom: 24px
+			left: 50% 
+			transform: translateX(-50%)
+			width: 87.467vw
+			font-size: 14px
+			line-height: 125%
+			letter-spacing: 2.5px
+	.h1 
+		margin-bottom: 24px
+	.sub-title
+		font-size: 20px
+	.button
+		padding: 12px 24px
+		font-size: 14px
+		line-height: 125%
+		letter-spacing: 2.5px
+	.partner__item
+		width: 50%
+	.steps__row
+		flex-direction: column
+	.step__item
+		width: 100%
+		margin-bottom: 0
+		margin-top: 0
+		padding-bottom: 24px 
+		padding-top: 24px
+	.step__item:nth-child(2)
+		border-left: none 
+		border-right: none 
+		border-top: 1px solid $brown
+		border-bottom: 1px solid $brown
+	.steps-section
+		padding-top: 56px 
+		padding-bottom: 56px
+	.heading
+		font-size: 40px
+	.step__item p
+		max-width: 100%
+
+	//start form style
+	.form__item
+		flex-direction: column
+	.form__col
+		width: 100%
+
+	//end form style
+	.careers__header
+		flex-direction: column
+	.careers__header-col--right
+		width: 100%
+		max-width: 100%
+	.footer__content .container-fluid
+		flex-direction: column 
+		justify-content: center
+	.footer-logo
+		display: block 
+		margin-bottom: 36px
+	.footer__menu 
+		flex-direction: column
+	.footer__link
+		margin-left: 0 
+		margin-bottom: 30px
+	.footer__content
+		padding-bottom: 0
+	.footer__bottom
+		padding-top: 30px
+		.container-fluid
+			flex-direction: column
+			justify-content: center
+	.copy 
+		margin-bottom: 30px
+	.line-menu
+		margin-left: 12px 
+		margin-right: 12px
+	.fixed-button
+		display: flex 
+		position: fixed 
+		bottom: 24px 
+		width: 87.467vw
+		left: 50% 
+		transform: translateX(-50%)
+		z-index: 995
+
+
+
+
+		
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.h1
+		font-size: 13.889vw
+	.partner__item
+		width: 100%
+	.partners
+		padding-top: 40px 
+		padding-bottom: 40px
+	.form-section
+		padding-top: 0 
+		padding-bottom: 0
+		.container-fluid 
+			width: 100%
+			max-width: 100%
+	.form-wrapper
+		padding-left: 6vw 
+		padding-right: 6vw
+		padding-top: 56px 
+		padding-bottom: 56px
+	.form__item-title
+		font-size: 16px
+		margin-bottom: 24px
+	.form__item-title img
+		width: 8.67px
+		margin-right: 11.33px
+	.riddle-item
+		font-size: 20px
+	.textarea
+		height: 100px
+	.form__item--contact
+		padding-top: 56px
+		border-top: 1px solid $brown
+	.input
+		width: 100%
+		margin-left: 0 
+		margin-right: 0
+		margin-top: 8px
+		top: 0
+	.form-wrapper
+		backdrop-filter: blur(12.5px)
+		span 
+			display: none
+	.contact-wrapper
+		font-size: 20px
+	.checkbox-row .checkbox-text-label
+		font-size: 14px
+	.checkbox-row
+		align-items: flex-start
+	.form__item--contact
+		margin-bottom: 30px
+	.checkbox-wrapper
+		top: 2px
+	.submit-button
+		width: 100%
+	.benefits-card
+		margin-left: 0
+		width: 100%
+	.arrows
+		position: static
+		transform: translateY(0)
+		margin-top: 50px
+	.swiper-button-prev,
+	.swiper-button-prev:hover
+		border-color: $blue
+		background-image: url('../img/prev-blue.svg')
+		background-repeat: no-repeat
+		background-position: center
+	.swiper-button-next,
+	.swiper-button-next:hover
+		border-color: $blue
+		background-image: url('../img/next-blue.svg')
+		background-repeat: no-repeat
+		background-position: center
+	.swiper
+		overflow: visible
+	.swiper-pagination-bullet
+		width: 12px
+		height: 12px
+		background: #B9BCC3
+	.swiper-pagination-bullet-active
+		background: $blue
+	.swiper-pagination
+		position: static
+		margin-top: -5px
+		width: 100px !important
+		margin-left: auto 
+		margin-right: auto
+	.swiper-button-next
+		width: 44px
+		height: 44px
+	.swiper-button-prev
+		width: 44px
+		height: 44px
+	.swiper-slide 
+		padding-top: 50px 
+		padding-bottom: 50px
+	.benefits-card__title
+		font-size: 16px
+	.benefits-card p
+		font-size: 16px
+		margin-bottom: 30px
+	.benefits-card
+		height: auto
+		min-height: 350px
+	.careers
+		padding-bottom: 80px
+		padding-top: 80px
+	.careers__header
+		padding-bottom: 30px
+	
+
+		
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+	
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+
